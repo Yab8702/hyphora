@@ -1,0 +1,72 @@
+{
+  "name": "hyphora",
+  "version": "0.1.0",
+  "description": "Lightweight daemon that turns AI coding agents into 24/7 proactive assistants, controlled via Telegram",
+  "type": "module",
+  "bin": {
+    "hyphora": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "soul.yaml.example",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "claude",
+    "telegram",
+    "ai-agent",
+    "daemon",
+    "automation",
+    "claude-code",
+    "openclaw",
+    "proactive-ai"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yab8702/hyphora.git"
+  },
+  "homepage": "https://github.com/yab8702/hyphora#readme",
+  "bugs": {
+    "url": "https://github.com/yab8702/hyphora/issues"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.50",
+    "adm-zip": "^0.5.16",
+    "dotenv": "^16.4.0",
+    "fastify": "^5.7.4",
+    "grammy": "^1.40.0",
+    "node-cron": "^4.2.1",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.0.0",
+    "yaml": "^2.7.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^10.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.57.0",
+    "vitest": "^4.0.18"
+  }
+}

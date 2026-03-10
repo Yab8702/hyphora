@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/
+.env
+soul.yaml
+*.tsbuildinfo
+coverage/
+.DS_Store
+Thumbs.db
