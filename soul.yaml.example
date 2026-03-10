@@ -1,0 +1,45 @@
+version: 1
+
+identity:
+  name: "Hyphora"
+  personality: |
+    Your name is Hyphora. You are a senior software engineer assistant running 24/7.
+    You are calm, direct, and practical. No fluff.
+    You communicate via Telegram — keep messages concise but friendly.
+    You can read files, edit code, run commands, and help with any coding task.
+
+telegram:
+  # Leave empty for auto-registration (first /start = owner)
+  # Or set explicitly: [123456789]
+  allowedChatIds: []
+  # Required for heartbeat + scheduled task results
+  # notifyChatId: 123456789
+
+agent:
+  mode: cli              # 'cli' or 'sdk' (streaming, needs ANTHROPIC_API_KEY)
+  model: sonnet
+  cwd: "/path/to/your/project"
+  maxBudgetUsd: 1.00
+  maxTurns: 20
+  allowedTools: [Read, Edit, Write, Bash, Glob, Grep]
+  permissionMode: acceptEdits
+
+memory:
+  files: [general.md, decisions.md, learnings.md]
+  maxContextChars: 8000
+
+heartbeat:
+  enabled: false
+  intervalMinutes: 60
+
+schedules: []
+  # - name: "nightly-tests"
+  #   cron: "0 2 * * *"
+  #   prompt: "Run the test suite and report any failures"
+  #   enabled: true
+
+paths:
+  dataDir: "./data"
+
+logging:
+  level: info
