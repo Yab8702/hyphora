@@ -39,11 +39,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yab8702/hyphora.git"
+    "url": "git+https://github.com/Yab8702/hyphora.git"
   },
-  "homepage": "https://github.com/yab8702/hyphora#readme",
+  "homepage": "https://github.com/Yab8702/hyphora#readme",
   "bugs": {
-    "url": "https://github.com/yab8702/hyphora/issues"
+    "url": "https://github.com/Yab8702/hyphora/issues"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.2.50",
