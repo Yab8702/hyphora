@@ -1,0 +1,14 @@
+export const APP_NAME = 'Hyphora';
+export const APP_VERSION = '0.2.0';
+export const DEFAULT_CONFIG_PATH = './soul.yaml';
+export const DEFAULT_DATA_DIR = './data';
+export const HISTORY_FILE = 'history.jsonl';
+export const MEMORY_DIR = 'memory';
+export const MAX_TELEGRAM_MESSAGE_LENGTH = 4096;
+export const QUEUE_DRAIN_TIMEOUT_MS = 30_000;
+export const TYPING_INDICATOR_INTERVAL_MS = 5_000;
+export const SESSION_CONTINUATION_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
+export const ELAPSED_TIME_UPDATE_INTERVAL_MS = 30_000;
+export const PROGRESS_THROTTLE_MS = 3_000;
+export const PERMISSION_TIMEOUT_MS = 60_000;
+export const DEFAULT_MEMORY_FILES = ['general.md', 'decisions.md', 'learnings.md'];
